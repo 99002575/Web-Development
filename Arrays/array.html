@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function myFunction() {
+          var x = document.getElementById("device").options.item(0).text;
+          var y = document.getElementById("device").options.item(1).text;
+          var z = document.getElementById("device").options.item(2).text;
+          var w = document.getElementById("device").options.item(3).text;
+          var selectedDevice = $(this).children("option:selected").val();
+          if(selectedDevice.val==x){
+                document.getElementById("demo").innerHTML = x;
+                }else if(selectedDevice.val==y){
+                    document.getElementById("demo").innerHTML = y;
+                }else if(selectedDevice.val==z){
+                    document.getElementById("demo").innerHTML = z;
+                }else if(selectedDevice.val==w){
+                    document.getElementById("demo").innerHTML = w;
+                }
+                else{
+                    alert("Choose an option")
+                }
+        }
+        </script>
+</head>
+<body>
+    <form>
+    <select class="device" >
+        <option value="Choose">Choose</option>
+        <option value="Laptop">Laptop</option>
+        <option value="Mobile">Mobile</option>
+        <option value="TV">TV</option>
+        <div id="mydiv" style="position: fixed;"></div>
+    </select></form>
+    <div style="background-color: yellow; font-family: garamond;" id="mydiv"></div>
+
+        <p id="demo"></p>
+        <br><input type="button" id="go" value="Submit" onclick="myFunction()">
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <script>
+        $(document).ready(function(){
+            $("select.device").change(function(){
+        var selectedDevice = $(this).children("option:selected").val();
+        if(selectedDevice=='Tv'){
+            document.getElementById("mydiv").innerHTML='It is a Samsung Tv';
+        }else if(selectedDevice=='Mobile'){
+            document.getElementById("mydiv").innerHTML='It is a Oneplus mobile';
+        }else if(selectedDevice=='Laptop'){
+            document.getElementById("mydiv").innerHTML='It is a HP Laptop';
+        }
+        else{
+            alert("Choose an option")
+        }
+        // alert("You have selected the country - " + selectedCountry);
+        
+    });
+});
+    </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var uname=["Raju","Ram"];
+        var pwd=document.getElementById("password").value;
+        function validateform(){
+            if(document.getElementById("username").value==""&& 5<length(document.getElementById("username").value)<15){
+                alert("enter your 5 name");
+                document.myform.uname.focus();
+            }else if(document.getElementById("password").value==""){
+                alert("enter your password");
+                document.myform.pwd.focus();
+            }else if(document.getElementById("phone").value=="" && 1111111111<document.getElementById("phone").value<9999999999){
+                alert("enter phone");
+                document.myform.phone.focus();
+            }else if(document.getElementById("city").value==""){
+                alert("enter city");
+                document.myform.city.focus();
+            }
+            else{
+                alert('You are good to go')
+            for(let i=0;i<length(uname);i++)
+            {
+                if(!uname[i].test(document.getElementById("username").value)){
+                alert('You are registered');
+                document.myform.submit();
+                }
+                else{
+                    alert("choose a different name");
+                }
+                if(document.getElementById("password").value== pwd.toUppercase()&& document.getElementById("password").value==pwd.toLowercase() && isNaN(pwd))
+                {
+                    alert('Enter password with lower case,uppercase,number');
+                }
+                else{
+                    alert('enter valid password');
+                }
+            }
+            document.myform.submit();
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="http://google.com" name="myform">
+        Username<input type="text" id="username" ><br><br>
+        Password<input type="text" id="password" ><br><br>
+        Email<input type="text" id="email" ><br><br>
+        Phone<input type="text" id="phone" ><br><br>
+        City<input type="text" id="city" ><br><br>
+        <input type="button" id="submit" value="Submit" onclick="validateform()">
+    </form>
+</body>
+</html>
