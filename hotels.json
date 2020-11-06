@@ -1,0 +1,30 @@
+[{
+    "Hotel":"Swagath",
+    "City":"Hyderabad",
+    "Type":"Veg/Non-Veg",
+    "cuisine":"Indian,Chinese"
+},
+{
+    "Hotel":"Surabhi",
+    "City":"Banglore",
+    "Type":"Veg/Non-Veg",
+    "cuisine":"Indian,Chinese"
+},
+{
+    "Hotel":"ABs",
+    "City":"Hyderabad",
+    "Type":"Veg/Non-Veg",
+    "cuisine":"Indian,Chinese,Continental"
+},
+{
+    "Hotel":"BN",
+    "City":"Chennai",
+    "Type":"Veg/Non-Veg",
+    "cuisine":"Indian,Chinese,Continental"
+},
+{
+    "Hotel":"Momo",
+    "City":"Hyderabad",
+    "Type":"Veg/Non-Veg",
+    "cuisine":"Italian,Chinese"
+}]
